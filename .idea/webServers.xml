@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0bbb05b8-f9ea-470b-adf6-2702544e67d8" name="新浪云" url="http://ct1314.applinzi.com">
+        <fileTransfer host="ftp.sinacloud.com" port="21" username="ct1314">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
