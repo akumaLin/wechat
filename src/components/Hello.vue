@@ -2,7 +2,7 @@
   <div class="hello">
     <div class="swip">
     <mt-swipe :auto="4000">
-      <mt-swipe-item></mt-swipe-item>
+      <mt-swipe-item>sefq342412</mt-swipe-item>
 
     </mt-swipe>
     </div>
