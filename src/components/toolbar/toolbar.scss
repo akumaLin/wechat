@@ -4,22 +4,26 @@ html {
 }
 
 ul {
-  margin-top: 2vw;
   display: block;
   position: fixed;
   bottom: 0;
  width: 100%;
+  background:gainsboro;
+  padding-top: 2vw;
+  -webkit-transform:translateZ(0);
+  -moz-transform:translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform:translateZ(0);
+
   li {
     float: left;
     width: 20%;
     list-style: none;
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2vw;
-    a{
-      text-decoration: none;
-      color: #5a5a5a;
-    }
+
+
     i{
       color: black;
     }
@@ -28,4 +32,10 @@ ul {
     }
 
   }
+}
+.my-margin-top{
+  height: 20vw;
+  text-align: center;
+  font-size: 3rem;
+  color: gainsboro;
 }

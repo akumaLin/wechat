@@ -1,6 +1,7 @@
 <template>
   <div class="index">
     <router-view></router-view>
+    <div class="my-margin-top">到底了</div>
     <ul>
       <li v-for="item in items">
         <router-link to="#">
@@ -13,7 +14,7 @@
 
 <script>
   export default {
-    name: 'navbar',
+    name: 'toolbar',
     data () {
       return {
         items: [

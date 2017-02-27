@@ -1,0 +1,48 @@
+ul{
+  border-top:2vw solid gainsboro;
+ display: inline-block;
+
+  .li-item{
+    width: 50%;
+    float: left;
+    list-style: none;
+    height: 35vw;
+    border:1px solid gainsboro;
+    box-sizing: border-box;
+    padding-left: 3vw;
+    padding-bottom: 3vw;
+    .big-title{
+      font-size: 2.5rem;
+      padding-top: 3vw;
+    }
+    .small-title{
+      font-size: 2rem;
+    }
+    img{
+      padding: 1vw;
+      max-width: 70%;
+      max-height: 75%;
+
+    }
+    div{
+      float: left;
+      width: 50%;
+      height: 100%;
+    }
+    .right{
+     display: -webkit-box;
+      display: -moz-box;;
+      -webkit-box-align:center;
+      -webkit-box-pack:center;
+      -moz-box-align:center;
+      -moz-box-pack:center;
+      img{
+        padding: 1vw;
+        max-width: 80%;
+        max-height: 100%;
+
+      }
+    }
+  }
+
+}
