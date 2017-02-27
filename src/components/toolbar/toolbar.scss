@@ -1,0 +1,31 @@
+
+html {
+  font-size: 1rem;
+}
+
+ul {
+  margin-top: 2vw;
+  display: block;
+  position: fixed;
+  bottom: 0;
+ width: 100%;
+  li {
+    float: left;
+    width: 20%;
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2vw;
+    a{
+      text-decoration: none;
+      color: #5a5a5a;
+    }
+    i{
+      color: black;
+    }
+    p{
+      margin-top: 1vw;
+    }
+
+  }
+}

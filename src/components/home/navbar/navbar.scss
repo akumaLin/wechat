@@ -1,0 +1,30 @@
+
+html{
+  font-size: 1rem;
+}
+ul{
+  margin-top: 2vw;
+li{
+  float: left;
+  width: 25%;
+  list-style: none;
+  text-align: center;
+  font-size:2rem ;
+  margin-bottom: 2vw;
+  a{
+    text-decoration: none;
+    color: #5a5a5a;
+  }
+  .myIcon{
+    width: 12vw;
+    height:12vw;
+    border-radius: 6vw;
+    background: orangered;
+    text-align: center;
+    display: inline-block;
+    line-height: 12vw;
+
+  }
+
+}
+}

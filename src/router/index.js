@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from 'components/Hello'
+import home from 'components/home/home'
+import toolbar from 'components/toolbar/toolbar.vue'
 
 Vue.use(Router)
 
@@ -8,8 +9,18 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'toolbar',
+      component: toolbar,
+      children: [
+        {
+          path: '',
+          redirect: '/home'
+        },
+        {
+          path: '/home',
+          component: home
+        },
+        ]
     }
   ]
 })
