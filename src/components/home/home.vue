@@ -9,10 +9,10 @@
 </template>
 
 <script>
-  import swiper from "./swiper/swiper.vue";
-  import navbar from "./navbar/navbar.vue"
-  import news from "./news/news.vue"
-  import commodity from "./commodity/commodity.vue"
+  import swiper from "../swiper/swiper.vue";
+  import navbar from "../navbar/navbar.vue"
+  import news from "../news/news.vue"
+  import commodity from "../commodity/commodity.vue"
   export default {
     name: 'home',
     components: {

@@ -2,11 +2,12 @@
   <div class="index">
     <router-view></router-view>
     <div class="my-margin-top">到底了</div>
+
     <ul>
-      <li v-for="item in items">
+      <li v-for="(item,index) in items" @click="showcolor=index">
         <router-link to="#">
-          <i :class="item.icon"></i>
-          <p v-html="item.text"></p></router-link>
+          <i :class="['iconfont',item.icon,{on:showcolor===index}]" ></i>
+          <p v-html="item.text" :class="{on:showcolor===index}"></p></router-link>
       </li>
     </ul>
   </div>
@@ -18,15 +19,17 @@
     data () {
       return {
         items: [
-          {icon: "icono-user", text: "天猫"},
-          {icon: "icono-user", text: "天猫"},
-          {icon: "icono-user", text: "天猫"},
-          {icon: "icono-user", text: "天猫"},
-          {icon: "icono-user", text: "天猫"}
-
-        ]
+          {icon: "icon-nanzhuang", text: "天猫"},
+          {icon: "icon-dianpu", text: "阿里巴巴"},
+          {icon: "icon-shuma", text: "淘宝"},
+          {icon: "icon-peishi", text: "京东商城"},
+          {icon: "icon-baobao", text: "我的"}
+        ],
+        showcolor:0
       }
     }
+
+
   }
 </script>
 

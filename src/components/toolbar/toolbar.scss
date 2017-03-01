@@ -1,15 +1,11 @@
 
-html {
-  font-size: 1rem;
-}
-
 ul {
   display: block;
   position: fixed;
   bottom: 0;
  width: 100%;
-  background:gainsboro;
-  padding-top: 2vw;
+  background:rgba(249,249,249,0.98);
+  padding-top: 1.6vw;
   -webkit-transform:translateZ(0);
   -moz-transform:translateZ(0);
   -ms-transform: translateZ(0);
@@ -21,14 +17,18 @@ ul {
     width: 20%;
     list-style: none;
     text-align: center;
-    font-size: 2rem;
-
+    font-size: 1rem;
+   .on{
+     color: orange!important;
+   }
 
     i{
       color: black;
+      font-size: 1.2rem;
     }
     p{
       margin-top: 1vw;
+      font-size: 0.5rem;
     }
 
   }
@@ -36,6 +36,6 @@ ul {
 .my-margin-top{
   height: 20vw;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.2rem;
   color: gainsboro;
 }

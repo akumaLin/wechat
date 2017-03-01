@@ -4,7 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { Swipe, SwipeItem } from 'mint-ui';
-import icono from 'icono';
 import 'mint-ui/lib/swipe/style.css';
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);

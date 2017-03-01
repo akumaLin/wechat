@@ -1,8 +1,11 @@
 <template>
   <router-link to="#" class="news">
-    <div class="news-top"><p>夺宝</p>
-      <p>头条</p></div>
-    <transition name="slide-fade" @after-enter="afterEnter" mode="out-in">
+    <div class="news-top">
+      <span>夺宝</span>
+      <br>
+      <span>头条</span>
+    </div>
+    <transition name="slide-fade" @after-enter="afterEnter" >
       <div v-if="show" key="1" class="news-item">
          <p>方松潭中了10台iPhone4</p>
          <p>陈康妮中了一辆法拉利</p>
