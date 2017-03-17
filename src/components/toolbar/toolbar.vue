@@ -2,7 +2,6 @@
   <div class="index">
     <router-view></router-view>
     <div class="my-margin-top">到底了</div>
-
     <ul>
       <li v-for="(item,index) in items" @click="showcolor=index">
         <router-link to="">
@@ -29,9 +28,6 @@
         showcolor:0
       }
     }
-
-
-
   }
 </script>
 
