@@ -17,10 +17,11 @@ export default {
   margin:0;
   -webkit-tap-highlight-color:rgba(255,0,0,0);
   -webkit-font-smoothing : antialiased;
+  font-family: "微软雅黑";
 
 }
 html{
-  font-size: 1rem;
+  font-size: 3vw;
 }
 html,body{
   width:100vw;

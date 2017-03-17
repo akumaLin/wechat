@@ -28,16 +28,19 @@
 }
 
 .news-item{
-  margin-top: 1vw;
+/*  margin-top: 1vw;*/
   width: 75%;
   height: 15vw;
-  float: right;
+   float:right;
   overflow: hidden;
+  /*  text-align:center;*/
   font-size: 1rem;
-  padding-top: 1.5vw;
   padding-left:5vw;
   box-sizing: border-box;
  /* position: absolute;*/
+  tr{
+    height: 7vw;
+  }
 
 }
 

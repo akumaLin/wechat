@@ -7,12 +7,24 @@
     </div>
     <transition name="slide-fade" @after-enter="afterEnter" >
       <div v-if="show" key="1" class="news-item">
-         <p>方松潭中了10台iPhone4</p>
-         <p>陈康妮中了一辆法拉利</p>
+        <table>
+          <tr>
+            <td>方松潭中了1000台iPhone4</td>
+          </tr>
+          <tr>
+            <td>方松潭中9900台iPhone4</td>
+          </tr>
+        </table>
       </div>
       <div v-else key="2" class="news-item">
-        <p>方9中了10台iPhon</p>
-        <p>陈t中了一辆法拉利</p>
+        <table>
+          <tr>
+            <td>方松潭中了10台iPhone4</td>
+          </tr>
+          <tr>
+            <td>方松潭中了090台iPhone4</td>
+          </tr>
+        </table>
       </div>
     </transition>
 

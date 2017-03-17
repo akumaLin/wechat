@@ -1,31 +1,99 @@
 <template>
-  <ul>
-    <li v-for="good in goods" class="li-item">
-      <div class="left">
-        <p class="big-title">{{good.title1}}</p>
-        <p class="small-title" v-html="good.title2"></p>
-      <img :src="good.img1" alt="">
-      </div>
-      <div class="right" v-if="good.img2">
-      <img :src="good.img2" alt="">
-      </div>
-    </li>
-
-  </ul>
+  <div class="com">
+    <router-link to="#" v-for="good in goods" class="li-item">
+      <img :src="good.img" alt="">
+      <p v-html="good.title"></p>
+      <table>
+        <tr>
+          <td class="money">￥{{good.price}}</td>
+          <td class="num">{{good.num}}人付款</td>
+        </tr>
+      </table>
+    </router-link>
+  </div>
 </template>
 
 <script>
   export default {
     name: 'commodity',
     data(){
-    return{ goods:[
-        {title1:"淘抢购",title2:"一块九包邮",img1:"https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",img2:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1937593380,3834108448&fm=116&gp=0.jpg"},
-        {title1:"限时抢购",title2:"九块九包邮",img1:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1937593380,3834108448&fm=116&gp=0.jpg",img2:"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1387826796,1424201369&fm=21&gp=0.jpg"},
-        {title1:"清仓大甩卖",title2:"免费",img1:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2273064087,2217151642&fm=21&gp=0.jpg",img2:"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2721703455,483435980&fm=21&gp=0.jpg"},
-      {title1:"淘抢购",title2:"一块九包邮",img1:"https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",img2:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1937593380,3834108448&fm=116&gp=0.jpg"}
-
-      ]
-    }}
+      return {
+        goods: [
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快有手慢无西瓜琵琶西红柿限时抢购手快有手",
+            price: "12314",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快西瓜琵琶西红柿限时抢购手快有手有手慢无",
+            price: "123",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "31",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "12312",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快有手慢无西瓜琵琶西红柿限时抢购手快有手",
+            price: "12314",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快西瓜琵琶西红柿限时抢购手快有手有手慢无",
+            price: "123",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "31",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "12312",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快有手慢无西瓜琵琶西红柿限时抢购手快有手",
+            price: "12314",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限时抢购手快西瓜琵琶西红柿限时抢购手快有手有手慢无",
+            price: "123",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "31",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          },
+          {
+            title: "[热门推荐]西瓜琵琶西红柿限西瓜琵琶西红柿限时抢购手快有手时抢购手快有手慢无",
+            price: "12312",
+            img: "https://img6.bdstatic.com/img/image/smallpic/dongman.jpg",
+            num: "33321"
+          }
+        ]
+      }
+    }
 
   }
 </script>

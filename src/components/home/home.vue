@@ -4,7 +4,6 @@
      <navbar></navbar>
      <news></news>
     <commodity></commodity>
-    <commodity></commodity>
   </div>
 </template>
 

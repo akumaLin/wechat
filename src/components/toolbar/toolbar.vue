@@ -5,9 +5,10 @@
 
     <ul>
       <li v-for="(item,index) in items" @click="showcolor=index">
-        <router-link to="#">
+        <router-link to="">
           <i :class="['iconfont',item.icon,{on:showcolor===index}]" ></i>
-          <p v-html="item.text" :class="{on:showcolor===index}"></p></router-link>
+          <p v-html="item.text" :class="{on:showcolor===index}"></p>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -28,6 +29,7 @@
         showcolor:0
       }
     }
+
 
 
   }
